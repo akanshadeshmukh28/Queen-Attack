@@ -13,22 +13,22 @@
       <label>Input White Queen Position </label><br>
       <div>
         <p>Row : </p>
-       <input type='number' [(ngModel)]='whiteRow' min='1' max='8' (change)='checkIfWhiteRowValid(whiteRow)'>
+       <input type='number' [(ngModel)]='whiteRow' min='1' max='8' (change)='checkIfWhiteRowValid()'>
       </div>
       <div>
         <p>Column (ex: a=1,b=2,c=3...) : </p>
-        <input type='number' [(ngModel)]='whiteCol' min='1' max='8' (change)='checkIfValid(whiteCol)'>
+        <input type='number' [(ngModel)]='whiteCol' min='1' max='8' (change)='checkIfWhiteColValid()'>
       </div>
     </div>
     <div  class='input'>
       <label>Input Black Queen Position</label>
       <div>
         <p>Row : </p>
-       <input type='number' [(ngModel)]='blackRow' min='1' max='8' (change)='checkIfValid(blackRow)'>
+       <input type='number' [(ngModel)]='blackRow' min='1' max='8' (change)='checkIfBlackRowValid()'>
       </div>
       <div>
         <p>Column  (ex: a=1,b=2,c=3...)  : </p>
-        <input type='number' [(ngModel)]='blackCol' min='1' max='8' (change)='checkIfValid(blackCol)'>
+        <input type='number' [(ngModel)]='blackCol' min='1' max='8' (change)='checkIfBlackColValid()'>
       </div>
 
       <div class='input'>
